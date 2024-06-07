@@ -25,6 +25,10 @@ body {
   margin: 0;
 }
 
+/* .main {
+  min-height: 100vh;
+} */
+
 a {
   text-decoration: none;
   color: inherit;
@@ -166,6 +170,7 @@ nav li:hover {
   padding: 2rem;
   display: grid;
   place-content: center;
+  gap: 2rem;
 }
 
 .lets-connect h2 {
@@ -185,6 +190,13 @@ nav li:hover {
   width: fit-content;
   border: none;
   cursor: pointer;
+  transition: all 0.25s;
+}
+
+.lets-connect button:hover {
+  background-color: #225c96;
+  transform: scale(1.05);
+  box-shadow: 0 2px 2px var(--dark);
 }
 
 .lets-connect img {
@@ -254,13 +266,13 @@ nav li:hover {
     text-align: center;
   }
 
-  .lets-connect img {
+  /* .lets-connect img {
     order: 1;
   }
 
   .lets-connect div:first-child {
     order: 2;
-  }
+  } */
 
   .rationale {
     grid-template-columns: 1fr;
@@ -288,9 +300,11 @@ nav li:hover {
 footer {
   width: 100%;
   height: 6rem;
+  margin-top: 4rem;
   background-color: var(--main);
   text-align: center;
   color: var(--light);
   display: grid;
   place-content: center;
+  margin-top: auto;
 }
