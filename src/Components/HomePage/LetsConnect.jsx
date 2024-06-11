@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function LetsConnect() {
+  const navigate = useNavigate();
+
   return (
     <div className="lets-connect">
       <div>
@@ -10,7 +14,7 @@ export default function LetsConnect() {
           and crafting tailored soultions to elevate your brand. Click here to
           get in touch and take the first step towards sustainable growth.
         </p>
-        <button>Get Started</button>
+        <button onClick={() => navigate("/contact")}>Get Started</button>
       </div>
       <div>
         <img src="social-media.avif" alt="Social media" />

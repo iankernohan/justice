@@ -1,6 +1,8 @@
+import useScrollToTop from "../../Hooks/useScrollToTop";
 import "./Team.css";
 
 export default function Team() {
+  useScrollToTop();
   return (
     <div className="meet-the-team">
       <h2>Meet the Team</h2>

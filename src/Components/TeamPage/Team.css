@@ -5,7 +5,7 @@
 .meet-the-team h2 {
   text-align: center;
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .meet-the-team section {
@@ -33,4 +33,14 @@
 
 .meet-the-team p {
   line-height: 2rem;
+}
+
+@media (max-width: 750px) {
+  .meet-the-team section {
+    grid-template-columns: 1fr;
+  }
+
+  .meet-the-team section div {
+    margin-bottom: 2rem;
+  }
 }

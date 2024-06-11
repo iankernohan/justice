@@ -1,0 +1,80 @@
+.contact {
+  padding: 4rem 2rem;
+}
+
+.contact h2 {
+  font-size: 4rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.contact > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact label small {
+  color: red;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.5rem 0.25rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  transition: all 0.2s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 2px solid var(--main);
+  outline-offset: 2px;
+}
+
+.contact img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact button {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.15rem;
+}
+
+.contact .error {
+  outline: 2px solid red;
+}
+
+@media (max-width: 750px) {
+  .contact img {
+    display: none;
+  }
+
+  .contact > div {
+    grid-template-columns: 1fr;
+  }
+}

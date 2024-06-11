@@ -3,7 +3,7 @@ import App from "../App";
 import Home from "../Components/HomePage/Home";
 import Services from "../Components/ServicesPage/Services";
 import Team from "../Components/TeamPage/Team";
-import Contact from "../ContactPage/Contact";
+import Contact from "../Components/ContactPage/Contact";
 
 const router = createBrowserRouter([
   {
