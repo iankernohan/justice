@@ -10,11 +10,11 @@ export default function CarouselVid() {
 
   const videos = [
     // "emma_jazz.mp4",
+    "umoja.mp4",
     "biggie.mp4",
     // "abby_solo.mp4",
     "lions.mp4",
     "RPReplay_Final.mov",
-    "umoja.mp4",
   ];
 
   function slideNext(e) {
@@ -52,6 +52,7 @@ export default function CarouselVid() {
         autoHeight={true}
         autoWidth={true}
         keyboardNavigation={true}
+        touchTracking={false}
         onSlideChange={handleSlideChange}
         onSlideChanged={handleSlideChanged}
         ref={carousel}

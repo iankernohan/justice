@@ -5,11 +5,12 @@ import { VscPieChart } from "react-icons/vsc";
 import { FiEye } from "react-icons/fi";
 import "./Services.css";
 import CarouselVid from "./CarouselVid";
+import { motion } from "framer-motion";
 
 export default function Services() {
   useScrollToTop();
   return (
-    <div className="services">
+    <motion.div className="services">
       <h2>Services</h2>
       <CarouselVid />
       <div className="content">
@@ -65,6 +66,6 @@ export default function Services() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
