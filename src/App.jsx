@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 function App() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait" initial={false}>
+    <AnimatePresence mode="wait" initial={true}>
       <main className="main">
         <Navbar />
         <motion.div
@@ -23,6 +23,11 @@ function App() {
             y: 100,
             opacity: 0,
           }}
+          // transition={{
+          //   duration: 0.5,
+          //   type: "spring",
+          //   stiffness: 150,
+          // }}
         >
           <Outlet />
         </motion.div>
