@@ -6,9 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 function App() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait" initial={true}>
-      <main className="main">
-        <Navbar />
+    <main className="main">
+      <Navbar />
+      <AnimatePresence mode="wait" initial={true}>
         <motion.div
           key={location.pathname}
           initial={{
@@ -19,10 +19,10 @@ function App() {
             y: 0,
             opacity: 1,
           }}
-          exit={{
-            y: 100,
-            opacity: 0,
-          }}
+          // exit={{
+          //   y: 100,
+          //   opacity: 0,
+          // }}
           // transition={{
           //   duration: 0.5,
           //   type: "spring",
@@ -31,9 +31,9 @@ function App() {
         >
           <Outlet />
         </motion.div>
-        <Footer />
-      </main>
-    </AnimatePresence>
+      </AnimatePresence>
+      <Footer />
+    </main>
   );
 }
 

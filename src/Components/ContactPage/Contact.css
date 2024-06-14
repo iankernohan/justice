@@ -1,5 +1,6 @@
 .contact {
   padding: 4rem 2rem;
+  position: relative;
 }
 
 .contact h2 {
@@ -67,6 +68,82 @@
 
 .contact .error {
   outline: 2px solid red;
+}
+
+.send-confirm,
+.message-error {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgb(49, 44, 50, 0.5);
+  color: var(--light);
+  box-shadow: 0px 5px 5px var(--dark);
+}
+
+.message-error {
+  cursor: pointer;
+}
+
+.send-confirm svg {
+  color: rgb(0, 193, 0);
+  font-size: 3rem;
+}
+
+.message-error p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.message-error svg {
+  color: red;
+  font-size: 3rem;
+}
+
+.message-error small {
+  font-size: 1rem;
+}
+
+.loader {
+  width: 2rem;
+  aspect-ratio: 0.75;
+  --c: no-repeat linear-gradient(#ffefeb 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  animation: l7 1s infinite linear alternate;
+}
+
+@keyframes l7 {
+  0% {
+    background-size: 20% 50%, 20% 50%, 20% 50%;
+  }
+  20% {
+    background-size: 20% 20%, 20% 50%, 20% 50%;
+  }
+  40% {
+    background-size: 20% 100%, 20% 20%, 20% 50%;
+  }
+  60% {
+    background-size: 20% 50%, 20% 100%, 20% 20%;
+  }
+  80% {
+    background-size: 20% 50%, 20% 50%, 20% 100%;
+  }
+  100% {
+    background-size: 20% 50%, 20% 50%, 20% 50%;
+  }
 }
 
 @media (max-width: 750px) {
