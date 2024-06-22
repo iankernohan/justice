@@ -154,4 +154,11 @@
   .contact > div {
     grid-template-columns: 1fr;
   }
+
+  .send-confirm,
+  .message-error {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    width: 80%;
+  }
 }

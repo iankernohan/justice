@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       <img src="./logo.png" alt="" />
-      <div>MeltingIceMarketing</div>
+      <div>Melting Ice Marketing</div>
     </footer>
   );
 }

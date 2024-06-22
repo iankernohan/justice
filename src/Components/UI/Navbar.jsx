@@ -1,11 +1,13 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { HiBars3 } from "react-icons/hi2";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname == "/";
 
   function toggleNavMenu() {
     setOpenDrawer((curr) => !curr);
@@ -15,21 +17,23 @@ export default function Navbar() {
     setOpenDrawer(false);
   }
 
-  function handleScroll() {
+  const handleScroll = useCallback(() => {
     const offset = window.scrollY;
     offset > 50 ? setScrolled(true) : setScrolled(false);
-  }
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
-    <nav className={scrolled ? "scrolled" : ""}>
+    <nav
+      className={`${scrolled ? "scrolled" : ""}`}
+      style={isHome && !scrolled ? { color: "#ffefeb" } : {}}
+    >
       <h2 onClick={() => navigate("/")}>Melting Ice Marketing</h2>
       <ul className="navbar">
         <li>

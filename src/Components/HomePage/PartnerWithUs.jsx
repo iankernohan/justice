@@ -10,10 +10,10 @@ export default function PartnerWithUs() {
         <div>
           <h4>Data-Driven Approach</h4>
           <p>
-            At MeltingIceMarketing we leverage data to drive informed decisions
-            and optimize your marketing efforts. Our focus on data ensures that
-            every strategy is backed by insights, leading to measurable results
-            and continuous improvement.
+            At Melting Ice Marketing we leverage data to drive informed
+            decisions and optimize your marketing efforts. Our focus on data
+            ensures that every strategy is backed by insights, leading to
+            measurable results and continuous improvement.
           </p>
         </div>
 

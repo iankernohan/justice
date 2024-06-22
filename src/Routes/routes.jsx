@@ -4,7 +4,7 @@ import Home from "../Components/HomePage/Home";
 import Services from "../Components/ServicesPage/Services";
 import Team from "../Components/TeamPage/Team";
 import Contact from "../Components/ContactPage/Contact";
-import PageNotFound from "../Components/PageNotFound";
+import PageNotFound from "../Components/UI/PageNotFound";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "*",
+        path: "/:unknown",
         element: <PageNotFound />,
       },
     ],

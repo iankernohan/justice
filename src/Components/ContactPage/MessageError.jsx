@@ -13,7 +13,10 @@ export default function MessageError({ setSendError }) {
     >
       <RxCrossCircled />
       <span>Message Failed to Send</span>
-      <p>Try again later or email justiceemail@email.com directly.</p>
+      <p>
+        Try again later or email <b>contact@meltingicemarketing.com</b>{" "}
+        directly.
+      </p>
       <small>(Click to dismiss)</small>
     </motion.section>
   );

@@ -61,7 +61,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 nav h2 {
@@ -73,6 +73,11 @@ nav h2 {
 .scrolled {
   background-color: rgb(255, 239, 235, 0.5);
   backdrop-filter: blur(2px);
+  color: var(--dark);
+}
+
+nav .is-home {
+  color: var(--light);
 }
 
 nav .navbar {
@@ -151,21 +156,26 @@ footer img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20rem;
-  font-size: 5rem;
   gap: 2rem;
+  font-size: 5rem;
   text-align: center;
-  margin-bottom: 5rem;
+  /* margin-top: 20rem; */
+  margin: 5rem 0;
+  height: calc(100dvh - 16rem);
 }
 
 .page-not-found svg {
   color: var(--main);
   font-size: 8rem;
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 0.7));
+  /* -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 0.7)); */
 }
 
-@media (max-width: 750px) {
+.page-not-found small {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 750px), screen and (max-height: 750px) {
   .drawer {
     display: block;
   }
@@ -175,6 +185,10 @@ footer img {
   }
 
   .page-not-found {
-    margin-top: 15rem;
+    font-size: 3rem;
+  }
+
+  .page-not-found small {
+    font-size: 2rem;
   }
 }
