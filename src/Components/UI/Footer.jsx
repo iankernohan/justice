@@ -1,8 +1,16 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer>
+      <h6>Melting Ice Marketing</h6>
       <img src="./logo.png" alt="" />
-      <div>Melting Ice Marketing</div>
+      <div className="footer-nav">
+        <Link to="/">Home</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/team">Team</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </footer>
   );
 }

@@ -23,6 +23,10 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    setOpenDrawer(false);
+  }, [isHome]);
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

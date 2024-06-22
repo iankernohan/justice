@@ -10,13 +10,20 @@
 
 .services .content {
   display: grid;
+  margin-top: 2rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .services .content div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.services .content div section {
   display: grid;
   place-items: center;
-  padding: 2rem;
+  /* padding: 1rem; */
 }
 
 .services h3 {

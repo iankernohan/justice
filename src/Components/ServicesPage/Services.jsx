@@ -15,10 +15,12 @@ export default function Services() {
       <CarouselVid />
       <div className="content">
         <div>
-          <span>
-            <TiSocialAtCircular />
-          </span>
-          <h3>Social Media Marketing</h3>
+          <section>
+            <span>
+              <TiSocialAtCircular />
+            </span>
+            <h3>Social Media Marketing</h3>
+          </section>
           <p>
             Melting Ice Marketing harnesses the power of social media to elevate
             your brand. Our comprehensive social media marketing strategies
@@ -30,10 +32,12 @@ export default function Services() {
         </div>
 
         <div>
-          <span>
-            <RiFilePaper2Line />
-          </span>
-          <h3>Print Text Advertising</h3>
+          <section>
+            <span>
+              <RiFilePaper2Line />
+            </span>
+            <h3>Print Text Advertising</h3>
+          </section>
           <p>
             We excel in creating impactful print ad campaigns that capture
             attention and drive results. From eye-catching designs to compelling
@@ -44,10 +48,12 @@ export default function Services() {
         </div>
 
         <div>
-          <span>
-            <VscPieChart />
-          </span>
-          <h3>Long and Short Term Strategy Consulting</h3>
+          <section>
+            <span>
+              <VscPieChart />
+            </span>
+            <h3>Long and Short Term Strategy Consulting</h3>
+          </section>
           <p>
             We provide expert strategy consulting to drive your success. Whether
             you need a long-term vision or short-term solutions, our tailored
@@ -58,10 +64,12 @@ export default function Services() {
         </div>
 
         <div>
-          <span>
-            <FiEye />
-          </span>
-          <h3>Organically Grow Your Audience</h3>
+          <section>
+            <span>
+              <FiEye />
+            </span>
+            <h3>Organically Grow Your Audience</h3>
+          </section>
           <p>
             Melting Ice Marketing will connect you with genuine followers
             through organic growth strategies. Our approach focuses on

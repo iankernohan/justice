@@ -5,23 +5,35 @@
   background-repeat: no-repeat;
   height: fit-content;
   min-height: 38rem;
-  /* background-color: rgb(146, 178, 246); */
   display: grid;
   place-content: center;
   padding: 2rem;
+  position: relative;
+}
+
+.hero .shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(49, 44, 50, 0.6);
+  z-index: 0;
 }
 
 .hero img {
   transform: scale(0.7);
   justify-self: center;
+  z-index: 5;
 }
 
 .hero h2 {
   font-size: 5rem;
   justify-self: center;
   color: var(--light);
-  text-shadow: -1px -1px black;
+  text-shadow: -2px -2px black;
   text-align: center;
+  z-index: 5;
 }
 
 .service-points {
@@ -119,6 +131,10 @@
 }
 
 @media (max-width: 750px) {
+  .hero {
+    height: 100dvh;
+  }
+
   .hero h2 {
     font-size: 4rem;
   }
@@ -138,14 +154,6 @@
     text-align: center;
   }
 
-  /* .lets-connect img {
-      order: 1;
-    }
-  
-    .lets-connect div:first-child {
-      order: 2;
-    } */
-
   .rationale {
     grid-template-columns: 1fr;
     margin-top: 1rem;
@@ -163,6 +171,10 @@
 }
 
 @media (max-width: 450px) {
+  .hero {
+    min-height: 10rem;
+  }
+
   .service-points {
     grid-template-columns: 1fr;
     gap: 2rem 0.5rem;

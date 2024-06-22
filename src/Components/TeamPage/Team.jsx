@@ -35,8 +35,8 @@ export default function Team() {
             his life within the Detroit area, he&apos;s come to love and have an
             appreciation for the local businesses that represent the culture of
             this beautiful state. With experience in consulting and research and
-            development he look forward to helping you project your vision and
-            business!
+            development he&apos;s look forward to helping you project your
+            vision and business!
           </p>
         </div>
 
@@ -45,10 +45,12 @@ export default function Team() {
           <h5>Ian Kernohan</h5>
           <h6>Developer</h6>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            nostrum autem omnis vitae natus distinctio molestiae amet dolor
-            doloribus alias ratione vero debitis expedita esse, culpa libero
-            deleniti exercitationem placeat?
+            Ian is a self-taught web developer who loves building easy-to-use
+            and effective websites. Focused on delivering high-quality results,
+            Ian works hard to create web solutions that meet our clients&apos;
+            needs. Always eager to learn and improve, Ian is excited to take on
+            new projects. If you need a website designed and bulit, we&apos;d be
+            delighted to help you make it happen!
           </p>
         </div>
       </section>
