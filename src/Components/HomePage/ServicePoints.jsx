@@ -13,6 +13,8 @@ export default function ServicePoints() {
 
   return (
     <div className="service-points">
+      <div className="shadow"></div>
+
       <div onClick={toServicePage}>
         <TiSocialAtCircular />
         <div>Social Media Marketing</div>

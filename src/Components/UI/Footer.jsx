@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer>
-      <h6>Melting Ice Marketing</h6>
+      <h6>contact@meltingicemarketing.com</h6>
       <img src="./logo.png" alt="" />
       <div className="footer-nav">
         <Link to="/">Home</Link>

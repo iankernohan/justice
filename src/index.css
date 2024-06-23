@@ -90,12 +90,6 @@ nav li:hover {
   text-decoration: underline;
 }
 
-.drawer {
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
 .navmenu {
   position: absolute;
   top: 80%;
@@ -144,7 +138,7 @@ footer img {
 }
 
 footer h6 {
-  font-weight: 500;
+  font-weight: inherit;
   margin: 0;
   font-size: inherit;
 }
