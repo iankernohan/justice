@@ -9,10 +9,10 @@ export default function CarouselVid() {
   const videoRefs = useRef([]);
 
   const videos = [
-    // "emma_jazz.mp4",
+    "emma_jazz.mp4",
     "umoja.mp4",
     "biggie.mp4",
-    // "abby_solo.mp4",
+    "abby_solo.mp4",
     "lions.mp4",
     "RPReplay_Final.mov",
   ];

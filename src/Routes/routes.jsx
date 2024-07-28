@@ -30,6 +30,10 @@ const router = createBrowserRouter([
         path: "/:unknown",
         element: <PageNotFound />,
       },
+      {
+        path: "*",
+        element: <PageNotFound />,
+      },
     ],
   },
 ]);

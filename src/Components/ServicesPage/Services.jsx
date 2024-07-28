@@ -1,18 +1,22 @@
-import useScrollToTop from "../../Hooks/useScrollToTop";
+import { lazy, Suspense } from "react";
+import { motion } from "framer-motion";
 import { TiSocialAtCircular } from "react-icons/ti";
 import { RiFilePaper2Line } from "react-icons/ri";
 import { VscPieChart } from "react-icons/vsc";
 import { FiEye } from "react-icons/fi";
+import useScrollToTop from "../../Hooks/useScrollToTop";
 import "./Services.css";
-import CarouselVid from "./CarouselVid";
-import { motion } from "framer-motion";
 
 export default function Services() {
+  const CarouselVid = lazy(() => import("./CarouselVid"));
   useScrollToTop();
+
   return (
     <motion.div className="services">
       <h2>Services</h2>
-      <CarouselVid />
+      <Suspense fallback={<div className="vid-loader"></div>}>
+        <CarouselVid />
+      </Suspense>
       <div className="content">
         <div>
           <section>

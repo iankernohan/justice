@@ -176,15 +176,17 @@ footer h6 {
     display: block;
   }
 
-  nav .navbar {
-    display: none;
-  }
-
   .page-not-found {
     font-size: 3rem;
   }
 
   .page-not-found small {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav .navbar {
+    display: none;
   }
 }
